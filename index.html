@@ -117,7 +117,7 @@
       backdrop-filter: blur(2px);
     } */
 
-    .hero-card {
+    /* .hero-card {
   width: min(720px, 100%);
   min-height: 690px;
   padding: 70px 35px 55px;
@@ -132,7 +132,30 @@
   align-items: center;
   justify-content: center;
 
-  /* New invitation box color */
+
+  background: #CE93D8;
+} */
+
+.hero-card {
+  width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  margin: 0 auto;
+
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.75);
+  outline: 1px solid rgba(255,255,255,.3);
+  outline-offset: 9px;
+
+  color: white;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   background: #CE93D8;
 }
 
@@ -284,9 +307,28 @@
 
     /* COUNTDOWN */
 
-    #invitation {
+    /* #invitation {
       background: #b88d9f;
-    }
+    } */
+
+    #invitation {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+
+  background: #b88d9f;
+
+      #location {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+
+  background: #b88d9f;
+}
 
     .countdown {
       display: grid;
@@ -609,7 +651,7 @@
 
     <section id="invitation" class="center">
 
-      <div class="wrap">
+      <div class="hero-card ">
 
         <div class="eyebrow">
           A day to remember
@@ -660,9 +702,9 @@
 
     <!-- CEREMONY AND RECEPTION -->
 
-    <section style="background:#fff" class="center">
+    <section id="location" class="center">
 
-      <div class="wrap">
+      <div class="hero-card ">
 
         <div class="eyebrow">
           Join us as we say “I do”
@@ -721,14 +763,14 @@
 
             <p>Brgy. Tranca, Bay, Laguna</p>
 
-            <a
+            <!-- <a
               class="map-link"
               target="_blank"
               rel="noopener"
               href="https://maps.app.goo.gl/SXUirqVen3CD4rWp7"
             >
               View reception map ↗
-            </a>
+            </a> -->
 
           </article>
 
@@ -742,7 +784,7 @@
 
     <section id="attire" class="attire center">
 
-      <div class="wrap">
+      <div class="hero-card ">
 
         <div class="eyebrow">
           Finer details
@@ -764,17 +806,17 @@
 
         <div class="swatches" aria-label="Wedding color palette">
 
-          <span class="swatch" style="background:#C2185B"></span>
+          <span class="swatch" style="background:#D28692"></span>
 
-          <span class="swatch" style="background:#F06292"></span>
+          <span class="swatch" style="background:#E6B0BE"></span>
 
-          <span class="swatch" style="background:#F8BBD0"></span>
+          <span class="swatch" style="background:#C5AAF0"></span>
 
-          <span class="swatch" style="background:#E1BEE7"></span>
+          <span class="swatch" style="background:#B383BD"></span>
 
-          <span class="swatch" style="background:#BA68C8"></span>
+          <span class="swatch" style="background:#854E76"></span>
 
-          <span class="swatch" style="background:#7B1FA2"></span>
+          <!-- <span class="swatch" style="background:#7B1FA2"></span> -->
 
         </div>
 
@@ -782,13 +824,13 @@
 
           <!-- PRINCIPAL SPONSORS -->
 
-          <article class="attire-card">
+          <!-- <article class="attire-card">
 
             <h3>Principal Sponsors</h3>
            
-            <!-- <img
+            <img
               src="image/sponsor.png"
-              alt="Formal wedding attire inspiration"            > -->
+              alt="Formal wedding attire inspiration"            >
 
             <p>
               Elegant semi-formal attire in soft, muted tones.
@@ -796,11 +838,11 @@
               wear a barong or suit.
             </p>
 
-          </article>
+          </article> -->
 
           <!-- GUESTS -->
 
-          <article class="attire-card">
+          <article class="attire-card ">
 
             <h3>Guests</h3>
 
@@ -827,7 +869,7 @@
 
     <section id="gifts" class="gift center">
 
-      <div class="wrap">
+      <div class="hero-card ">
 
         <div class="eyebrow">
           Your presence is our present
@@ -856,7 +898,7 @@
 
     <section id="reminders" class="reminders center">
 
-      <div class="wrap">
+      <div class="hero-card ">
 
         <div class="eyebrow">
           A few friendly reminders
