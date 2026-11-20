@@ -77,7 +77,7 @@
       );
     }
 
-    .hero:before,
+    /* .hero:before,
     .hero:after {
       content: '✧ ❧ ✧';
       position: absolute;
@@ -85,7 +85,7 @@
       opacity: .3;
       font-size: clamp(3rem, 10vw, 8rem);
       pointer-events: none;
-    }
+    } */
 
     .hero:before {
       top: 5%;
@@ -99,7 +99,7 @@
       transform: rotate(155deg);
     }
 
-    .hero-card {
+    /* .hero-card {
       width: min(720px, 100%);
       min-height: 690px;
       padding: 70px 35px 55px;
@@ -115,7 +115,26 @@
       justify-content: center;
       background: rgba(255,255,255,.055);
       backdrop-filter: blur(2px);
-    }
+    } */
+
+    .hero-card {
+  width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.75);
+  outline: 1px solid rgba(255,255,255,.3);
+  outline-offset: 9px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* New invitation box color */
+  background: #CE93D8;
+}
 
     .hero-card:before,
     .hero-card:after {
@@ -125,6 +144,11 @@
       font-size: 100px;
       color: rgba(255,255,255,.42);
     }
+
+    /* .hero:before,
+.hero:after {
+  content: none;
+} */
 
     .hero-card:before {
       top: 8px;
@@ -527,15 +551,17 @@
 
     <div class="hero-card">
 
-      <div class="eyebrow">
+      <!-- <div class="eyebrow">
         Together with our families
-      </div>
+      </div> -->
 
       <p class="intro">
-        With the blessing<br>
-        of our families<br>
+        With the blessing of our families<br>
+       
         we joyfully invite you to celebrate
       </p>
+      <br>
+      <br>
 
       <h1 class="script names">
         Stanley
@@ -560,9 +586,9 @@
         AT 10:30 IN THE MORNING
       </div>
 
-      <a class="hero-btn" href="#invitation">
+      <!-- <a class="hero-btn" href="#invitation">
         Open the invitation ↓
-      </a>
+      </a> -->
 
     </div>
 
@@ -666,14 +692,14 @@
 
             <p>Brgy. Masaya, Bay, Laguna</p>
 
-            <!-- <a
+            <a
               class="map-link"
               target="_blank"
               rel="noopener"
               href="https://www.google.com/maps/search/?api=1&query=San+Nicolas+de+Tolentino+Parish+Masaya+Bay+Laguna"
             >
               View church map ↗
-            </a> -->
+            </a>
 
           </article>
 
@@ -689,18 +715,20 @@
               <strong>Let us celebrate together</strong>
             </p>
 
-            <p>Lalao Resort</p>
+            <p>The Farmhouse</p>
 
             <p>Reception to follow the ceremony</p>
 
-            <!-- <a
+            <p>Brgy. Tranca, Bay, Laguna</p>
+
+            <a
               class="map-link"
               target="_blank"
               rel="noopener"
-              href="https://www.google.com/maps/search/?api=1&query=Lalao+Resort+Laguna"
+              href="https://maps.app.goo.gl/SXUirqVen3CD4rWp7"
             >
               View reception map ↗
-            </a> -->
+            </a>
 
           </article>
 
@@ -758,9 +786,9 @@
 
             <h3>Principal Sponsors</h3>
            
-            <img
+            <!-- <img
               src="image/sponsor.png"
-              alt="Formal wedding attire inspiration"            >
+              alt="Formal wedding attire inspiration"            > -->
 
             <p>
               Elegant semi-formal attire in soft, muted tones.
@@ -776,10 +804,10 @@
 
             <h3>Guests</h3>
 
-            <img
+            <!-- <img
               src="image/guest.png"
               alt="Wedding celebration attire inspiration"
-            >
+            > -->
 
             <p>
               Kindly choose semi-formal outfits inspired by
@@ -865,7 +893,7 @@
 
   <!-- FOOTER -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
 
     <div class="script">
       Stanley &amp; Denice Joy
@@ -875,7 +903,7 @@
       December 18, 2026 · With love and gratitude
     </p>
 
-  </footer>
+  </footer> -->
 
   <!-- COUNTDOWN JAVASCRIPT -->
 
