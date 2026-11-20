@@ -319,15 +319,6 @@
   padding: 50px 20px;
 
   background: #b88d9f;
-
-      #location {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 20px;
-
-  background: #b88d9f;
 }
 
     .countdown {
@@ -429,12 +420,19 @@
       box-shadow: 0 2px 8px #00000012;
     }
 
-    .attire-grid {
+    /* .attire-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
       margin-top: 35px;
-    }
+    } */
+
+    .attire-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
     .attire-card {
       background: white;
@@ -446,6 +444,7 @@
     .attire-card h3 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.6rem;
+      color: #70738F;
       font-weight: 600;
       margin: 0 0 15px;
     }
@@ -476,7 +475,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.25rem;
       line-height: 1.8;
-      color: #65718a;
+      color: #ffffff;
     }
 
     /* REMINDERS */
@@ -702,7 +701,7 @@
 
     <!-- CEREMONY AND RECEPTION -->
 
-    <section id="location" class="center">
+    <section style="background:#b88d9f" class="center">
 
       <div class="hero-card ">
 
@@ -867,7 +866,7 @@
 
     <!-- GIFT GUIDE -->
 
-    <section id="gifts" class="gift center">
+    <section id="gifts" style="background:#b88d9f" class="gift center">
 
       <div class="hero-card ">
 
