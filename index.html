@@ -480,9 +480,9 @@
 
     /* REMINDERS */
 
-    .reminders {
+    /* .reminders {
       background: #b88d9f;
-    }
+    } */
 
     .reminder-list {
       display: flex;
@@ -510,6 +510,153 @@
       color: var(--blue-deep);
       margin-top: 8px;
     }
+
+#reminders {
+  padding: 80px 20px;
+  background: #b88d9f;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative border */
+#reminders::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  pointer-events: none;
+}
+
+/* Main container */
+#reminders .hero-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  background: #c48afa;
+  box-shadow: none;
+  border: none;
+}
+
+/* Eyebrow text */
+#reminders .eyebrow {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #54204c;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Main title */
+#reminders .section-title {
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(50px, 8vw, 90px);
+  font-weight: normal;
+  color: #552047;
+  margin: 10px 0 50px;
+  line-height: 1.2;
+}
+
+/* Reminder cards container */
+#reminders .reminder-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* Individual reminder cards */
+#reminders .reminder-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 12px 25px rgba(65, 25, 65, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+#reminders .reminder-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 30px rgba(65, 25, 65, 0.3);
+}
+
+/* Icons */
+#reminders .reminder-icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 20px;
+  color: #542044;
+}
+
+#reminders .reminder-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card headings */
+#reminders .reminder-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3d1737;
+  margin: 15px 0;
+  letter-spacing: 0.5px;
+}
+
+/* Card descriptions */
+#reminders .reminder-card p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+  #reminders {
+    padding: 60px 15px;
+  }
+
+  #reminders .hero-card {
+    padding: 30px 10px;
+  }
+
+  #reminders .eyebrow {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  #reminders .section-title {
+    font-size: 55px;
+    margin-bottom: 35px;
+  }
+
+  #reminders .reminder-list {
+    gap: 25px;
+  }
+
+  #reminders .reminder-card {
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+
+  #reminders .reminder-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  #reminders .reminder-card h3 {
+    font-size: 19px;
+  }
+
+  #reminders .reminder-card p {
+    font-size: 16px;
+  }
+}
 
     /* FOOTER */
 
@@ -897,7 +1044,7 @@
 
     <section id="reminders" class="reminders center">
 
-      <div class="hero-card ">
+      <div class="hero-card">
 
         <div class="eyebrow">
           A few friendly reminders
@@ -907,7 +1054,7 @@
           Before the Big Day
         </h2>
 
-        <div class="reminder-list">
+        <!-- <div class="reminder-list">
 
           <div class="reminder">
             Be on time
@@ -924,7 +1071,183 @@
             <span>Make wonderful memories</span>
           </div>
 
-        </div>
+        </div> -->
+
+        <div class="reminder-list">
+
+      <!-- Reminder 1 -->
+      <div class="reminder-card">
+
+<div class="reminder-icon">
+  <svg viewBox="0 0 120 120" fill="none"
+       stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Clock -->
+    <circle cx="35" cy="55" r="28"/>
+    <circle cx="35" cy="55" r="24"/>
+
+    <!-- Clock hands -->
+    <path d="M35 38V55L48 65"/>
+
+    <!-- Clock markers -->
+    <path d="M35 32V35"/>
+    <path d="M35 75V78"/>
+    <path d="M12 55H15"/>
+    <path d="M55 55H58"/>
+    <path d="M19 39L21 41"/>
+    <path d="M49 69L51 71"/>
+    <path d="M19 71L21 69"/>
+    <path d="M49 41L51 39"/>
+
+    <!-- Church -->
+    <path d="M65 105V45L90 25L115 45V105Z"/>
+
+    <!-- Church roof -->
+    <path d="M60 45L90 20L120 45"/>
+
+    <!-- Cross -->
+    <path d="M90 12V25"/>
+    <path d="M84 18H96"/>
+
+    <!-- Church window -->
+    <circle cx="90" cy="43" r="5"/>
+
+    <!-- Church door -->
+    <path d="M80 105V75C80 62 100 62 100 75V105"/>
+    <path d="M90 75V105"/>
+
+    <!-- Church base -->
+    <path d="M60 105H120"/>
+
+  </svg>
+</div>
+
+        <h3>WE CAN'T WAIT TO SEE YOU</h3>
+
+        <p>
+          Kindly arrive at least 30 minutes before the
+          ceremony begins so we can start on time.
+        </p>
+
+      </div>
+
+      <!-- Reminder 2 -->
+      <div class="reminder-card">
+
+<!-- Reminder 2 Icon - Classic Wine Glasses with Hearts -->
+<div class="reminder-icon">
+  <svg viewBox="0 0 120 120"
+       fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       stroke-linecap="round"
+       stroke-linejoin="round">
+
+    <!-- Left Wine Glass -->
+    <path d="M18 20
+             L42 20
+             L40 45
+             Q38 60 30 65
+             Q22 60 20 45
+             Z"/>
+
+    <!-- Left Wine Glass Stem -->
+    <path d="M30 65L30 90"/>
+
+    <!-- Left Wine Glass Base -->
+    <path d="M20 95L40 95"/>
+
+    <!-- Right Wine Glass -->
+    <path d="M78 20
+             L102 20
+             L100 45
+             Q98 60 90 65
+             Q82 60 80 45
+             Z"/>
+
+    <!-- Right Wine Glass Stem -->
+    <path d="M90 65L90 90"/>
+
+    <!-- Right Wine Glass Base -->
+    <path d="M80 95L100 95"/>
+
+    <!-- Wine inside Left Glass -->
+    <path d="M20 43L40 43"/>
+
+    <!-- Wine inside Right Glass -->
+    <path d="M80 43L100 43"/>
+
+    <!-- Heart between glasses -->
+    <path d="M55 15
+             C48 5 37 12 42 22
+             L55 33
+             L68 22
+             C73 12 62 5 55 15
+             Z"/>
+
+    <!-- Small Heart -->
+    <path d="M78 6
+             C74 0 66 5 70 12
+             L78 20
+             L86 12
+             C90 5 82 0 78 6
+             Z"/>
+
+  </svg>
+</div>
+
+        <h3>STAY AND SHARE THE JOY</h3>
+
+        <p>
+          Celebrate with us from the ceremony all
+          the way through the reception program.
+        </p>
+
+      </div>
+
+      <!-- Reminder 3 -->
+      <div class="reminder-card">
+
+ <div class="reminder-icon">
+  <svg viewBox="0 0 120 120" fill="none"
+       stroke="currentColor" stroke-width="2"
+       stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- Camera body -->
+    <rect x="15" y="35" width="90" height="55" rx="7"/>
+
+    <!-- Camera top -->
+    <path d="M30 35L38 25H60L68 35"/>
+    <rect x="75" y="42" width="12" height="8"/>
+
+    <!-- Lens -->
+    <circle cx="60" cy="63" r="23"/>
+    <circle cx="60" cy="63" r="17"/>
+    <circle cx="60" cy="63" r="10"/>
+
+    <!-- Flash -->
+    <rect x="23" y="42" width="10" height="6"/>
+
+    <!-- Sparkles -->
+    <path d="M92 15L96 25L106 29L96 33L92 43L88 33L78 29L88 25Z"/>
+    <path d="M108 48L111 54L117 57L111 60L108 66L105 60L99 57L105 54Z"/>
+    <path d="M82 8L84 14L90 16L84 18L82 24L80 18L74 16L80 14Z"/>
+
+  </svg>
+</div>
+
+        <h3>MAKE WONDERFUL MEMORIES</h3>
+
+        <p>
+          Be fully present with us during the
+          ceremony and enjoy every moment.
+        </p>
+
+      </div>
+
+      </div>
+
 
       </div>
 
