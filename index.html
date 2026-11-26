@@ -854,8 +854,8 @@
 
 #invitation .timebox {
   background: transparent;
-      border: none;
-  color: #45352b;
+      border: 1px solid;
+  color:#f5dfbd;
 
   width: 90px;
   min-height: 112px;
@@ -872,6 +872,8 @@
 #invitation .timebox strong {
   font-size: 36px;
   color: #f5dfbd;
+  /* border: 1px solid;
+  padding: 1px; */
 }
 
 #invitation .timebox span {
@@ -912,7 +914,35 @@
    MOBILE RESPONSIVE
 ================================= */
 
+
+/* =================================
+   MOBILE RESPONSIVE - ALL SECTIONS
+================================= */
+
 @media (max-width: 768px) {
+
+  /* ALL SECTIONS */
+
+  section {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  /* ALL HERO CARDS - SAME SIZE */
+
+  section .hero-card {
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+  }
+
 
   /* INVITATION SECTION */
 
@@ -923,7 +953,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 100px 20px 50px;
+    padding: 90px 15px 40px;
 
     background-position: center;
     background-size: cover;
@@ -933,17 +963,10 @@
   /* INVITATION CARD */
 
   #invitation .hero-card {
-    width: 100%;
-    max-width: 390px;
-
     min-height: 500px;
     height: auto;
 
-    margin: 0 auto;
-
     padding: 55px 20px 45px;
-
-    box-sizing: border-box;
 
     overflow: hidden;
   }
@@ -952,9 +975,8 @@
   /* WEDDING TITLE */
 
   #invitation .section-title {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 1.2;
-
     margin: 12px 0;
   }
 
@@ -974,16 +996,14 @@
     line-height: 1.7;
 
     max-width: 100%;
-
     margin: 15px auto;
   }
 
 
-  /* COUNTDOWN CONTAINER */
+  /* COUNTDOWN */
 
   #invitation .countdown {
     display: grid;
-
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
     gap: 5px;
@@ -992,17 +1012,12 @@
     max-width: 320px;
 
     margin: 25px auto 0;
-
-    box-sizing: border-box;
   }
 
-
-  /* COUNTDOWN BOXES */
 
   #invitation .timebox {
     width: auto;
     min-width: 0;
-
     min-height: 65px;
 
     padding: 5px 0;
@@ -1012,31 +1027,52 @@
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
   }
 
 
-  /* COUNTDOWN NUMBERS */
-
   #invitation .timebox strong {
     font-size: clamp(25px, 7vw, 32px);
-
     line-height: 1.2;
-
     white-space: nowrap;
   }
 
 
-  /* COUNTDOWN LABELS */
-
   #invitation .timebox span {
     font-size: 8px;
-
     letter-spacing: 0.08em;
-
     white-space: nowrap;
+  }
+
+
+  /* DECORATIVE ICONS */
+
+  #invitation .hero-card::before {
+    top: 15px;
+    right: 12px;
+    left: auto;
+    bottom: auto;
+
+    transform: scale(0.45);
+    transform-origin: top right;
+
+    opacity: 0.30;
+    pointer-events: none;
+  }
+
+
+  #invitation .hero-card::after {
+    bottom: 15px;
+    left: 12px;
+    right: auto;
+    top: auto;
+
+    transform: scale(0.45);
+    transform-origin: bottom left;
+
+    opacity: 0.30;
+    pointer-events: none;
   }
 
 }
@@ -1049,17 +1085,16 @@
 @media (max-width: 380px) {
 
   #invitation {
-    padding: 90px 15px 35px;
+    padding: 85px 12px 35px;
   }
 
   #invitation .hero-card {
     min-height: 470px;
-
     padding: 45px 15px 35px;
   }
 
   #invitation .section-title {
-    font-size: 33px;
+    font-size: 32px;
   }
 
   #invitation .lead {
@@ -1068,7 +1103,7 @@
 
   #invitation .countdown {
     max-width: 280px;
-    gap: 2px;
+    gap: 3px;
   }
 
   #invitation .timebox strong {
@@ -1077,93 +1112,23 @@
 
   #invitation .timebox span {
     font-size: 7px;
-    letter-spacing: 0.05em;
   }
 
 }
 
 
-/* REMOVE EXTRA PINK SIDE ON MOBILE */
+/* PREVENT HORIZONTAL OVERFLOW */
 
 @media (max-width: 768px) {
 
-  html, body {
+  html,
+  body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
 
-  #invitation {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  #invitation .hero-card {
-    box-shadow: none !important;
-    border-right: 1px solid rgba(255,255,255,0.55);
-  }
-
 }
-
-
-
-@media (max-width: 380px) {
-
-  #invitation .countdown {
-    gap: 5px;
-  }
-
-  #invitation .timebox {
-    width: 48px;
-  }
-
-}
-
-/* =================================
-   MOBILE DECORATIVE ICONS
-================================= */
-
-@media (max-width: 768px) {
-
-  #invitation .hero-card {
-    position: relative;
-    overflow: hidden;
-  }
-
-  
-  #invitation .hero-card::before {
-    top: 15px;
-    right: 12px;
-
-    left: auto;
-    bottom: auto;
-
-    transform: scale(0.55);
-    transform-origin: top right;
-
-    opacity: 0.35;
-
-    pointer-events: none;
-  }
-
-  #invitation .hero-card::after {
-    bottom: 15px;
-    left: 12px;
-
-    right: auto;
-    top: auto;
-
-    transform: scale(0.55);
-    transform-origin: bottom left;
-
-    opacity: 0.35;
-
-    pointer-events: none;
-  }
-
-}
-
 
 
 
