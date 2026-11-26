@@ -58,7 +58,7 @@
       text-transform: uppercase;
       font-size: .68rem;
       font-weight: 600;
-      color: var(--blue-deep);
+      color: #ffffff;
     }
 
     /* HERO SECTION */
@@ -156,7 +156,12 @@
   align-items: center;
   justify-content: center;
 
-  background: #CE93D8;
+  background: rgba(140, 56, 219, 0.55);
+   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 12px;
 }
 
     .hero-card:before,
@@ -287,17 +292,19 @@
       font-family: 'Great Vibes', cursive;
       font-size: clamp(3rem, 7vw, 4.8rem);
       font-weight: 400;
-      color: var(--blue-deep);
+      color: #ffffff;
       margin: 8px 0 12px;
     }
 
     .lead {
       max-width: 620px;
       margin: 0 auto;
-      color: var(--muted);
+      color: #ffffff;
       line-height: 1.9;
       font-size: .9rem;
     }
+
+
 
     .flourish {
       color: var(--rose);
@@ -311,7 +318,7 @@
       background: #b88d9f;
     } */
 
-    #invitation {
+    /* #invitation {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -319,7 +326,7 @@
   padding: 50px 20px;
 
   background: #b88d9f;
-}
+} */
 
     .countdown {
       display: grid;
@@ -378,6 +385,7 @@
       font-size: 1.8rem;
       font-weight: 500;
       margin: 12px 0;
+      color: var(--rose);
     }
 
     .detail-card p {
@@ -532,7 +540,7 @@
   max-width: 900px;
   margin: auto;
   padding: 40px 20px;
-  background: #8c38db;
+  background: rgba(140, 56, 219, 0.55);
   box-shadow: none;
   border: none;
 }
@@ -728,14 +736,737 @@
         height: 190px;
       }
     }
+
+    
+/* =================================
+   WEDDING INVITATION SECTION
+================================= */
+
+
+ #invitation {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   INVITATION CARD
+================================= */
+
+#invitation .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px ;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+/* =================================
+   INVITATION TEXT
+================================= */
+
+#invitation .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#invitation .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#invitation .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#invitation .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+
+/* =================================
+   COUNTDOWN
+================================= */
+
+#invitation .countdown {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+  flex-wrap: nowrap;
+}
+
+#invitation .timebox {
+  background: #f3e6ce;
+  color: #45352b;
+
+  width: 90px;
+  min-height: 112px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 4px;
+  padding: 8px 3px;
+}
+
+#invitation .timebox strong {
+  font-size: 42px;
+  color: #3d3028;
+}
+
+#invitation .timebox span {
+  font-size: 12px;
+  color: #9b7562;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  #invitation {
+    min-height: 650px;
+
+    justify-content: center;
+
+    padding: 40px 25px;
+
+    background-position: center;
+  }
+
+  #invitation .hero-card {
+    width: min(390px, 100%);
+    min-height: 430px;
+
+    padding: 40px 22px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  #invitation .countdown {
+    gap: 5px;
+  }
+
+  #invitation .timebox {
+    width: 48px;
+  }
+
+}
+
+
+
+
+/* WEDDING CELEBRATION BACKGROUND */
+#celebration {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple6.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+/* #celebration {
+  background-image:
+    linear-gradient(
+      rgba(184, 141, 159, 0.35),
+      rgba(184, 141, 159, 0.35)
+    ),
+    url("image/couple6.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  min-height: 850px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 20px 8%;
+   box-sizing: border-box;
+} */
+
+
+/* MAIN CARD */
+
+/* #celebration .hero-card {
+  width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  margin: 0 auto;
+
+  text-align: center;
+  color: white;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(140, 56, 219, 0.45);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 9px;
+
+  border-radius: 12px;
+} */
+
+ 
+
+
+/* =================================
+   INVITATION CARD
+================================= */
+
+#celebration .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px 8%;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+/* =================================
+   INVITATION TEXT
+================================= */
+
+#celebration .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#celebration .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#celebration .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#celebration .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+
+#attire {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple5.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+
+#attire .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px 8%;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+#attire .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#attire .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#attire .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#attire .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+#attire .lead1 {
+  color: #2e2930;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+
+#gifts {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple7.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+
+#gifts .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px 8%;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+#gifts .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#gifts .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#gifts .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#gifts .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+#gifts .lead1 {
+  color: #2e2930;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+
+#hero {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+
+#hero .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px 8%;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+#hero .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#hero .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#hero .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#hero .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+#hero .lead1 {
+  color: #2e2930;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+
+
+#reminders {
+  background-image:
+    linear-gradient(
+      rgba(20, 15, 10, 0.20),
+      rgba(20, 15, 10, 0.20)
+    ),
+    url("image/couple2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 520px;
+
+  display: flex;
+  /* align-items: center; */
+  justify-content: flex-start;
+
+  padding: 30px 0 30px 8%;
+  box-sizing: border-box;
+}
+
+
+#reminders .hero-card {
+   width: min(720px, 100%);
+  min-height: 690px;
+  padding: 70px 35px 55px;
+
+  padding: 45px 30px 8%;
+
+  margin: 0;
+  transform: translateX(0);
+
+  box-sizing: border-box;
+
+  /* text-align: center; */
+  color: #f5e4c9;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+
+  /* Dark transparent card */
+  background: rgba(25, 22, 15, 0.70);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+
+  /* Gold border */
+  border: 1px solid rgba(232, 207, 164, 0.85);
+
+  outline: 1px solid rgba(232, 207, 164, 0.55);
+  outline-offset: 6px;
+
+  border-radius: 10px;
+}
+
+
+#reminders .eyebrow {
+  color: #e9d5ae;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#reminders .section-title {
+  color: #f5dfbd;
+  font-size: clamp(65px, 8vw, 63px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+#reminders .flourish {
+  color: #d9bd8d;
+  margin: 10px 0 15px;
+}
+
+#reminders .lead {
+  color: #f4e9d8;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
+#reminders .lead1 {
+  color: #2e2930;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 330px;
+}
+
   </style>
 </head>
 
 <body>
 
   <!-- HERO / OPENING INVITATION -->
+    <audio id="weddingMusic" loop>
+  <source src="music/ikaw-at-ako.mp3" type="audio/mpeg">
+</audio>
 
-  <header class="hero" id="home">
+  <header  id="hero">
+
+       
 
     <div class="hero-card">
 
@@ -795,7 +1526,7 @@
 
     <!-- WEDDING COUNTDOWN -->
 
-    <section id="invitation" class="center">
+    <section id="invitation" >
 
       <div class="hero-card ">
 
@@ -848,7 +1579,7 @@
 
     <!-- CEREMONY AND RECEPTION -->
 
-    <section style="background:#b88d9f" class="center">
+    <section id="celebration" >
 
       <div class="hero-card ">
 
@@ -928,7 +1659,7 @@
 
     <!-- ATTIRE GUIDE -->
 
-    <section id="attire" class="attire center">
+    <section id="attire" >
 
       <div class="hero-card ">
 
@@ -997,7 +1728,7 @@
               alt="Wedding celebration attire inspiration"
             > -->
 
-            <p>
+            <p class="lead1">
               Kindly choose semi-formal outfits inspired by
               the dusty rose, mauve, lavender, blush,
               and beige palette.
@@ -1013,7 +1744,7 @@
 
     <!-- GIFT GUIDE -->
 
-    <section id="gifts" style="background:#b88d9f" class="gift center">
+    <section id="gifts" >
 
       <div class="hero-card ">
 
@@ -1042,7 +1773,7 @@
 
     <!-- REMINDERS -->
 
-    <section id="reminders" class="reminders center">
+    <section id="reminders" >
 
       <div class="hero-card">
 
@@ -1253,6 +1984,8 @@
 
     </section>
 
+
+
   </main>
 
   <!-- FOOTER -->
@@ -1328,6 +2061,52 @@
     updateCountdown();
 
     setInterval(updateCountdown, 1000);
+
+
+// WEDDING BACKGROUND MUSIC
+
+const weddingMusic = document.getElementById("weddingMusic");
+const musicButton = document.getElementById("musicButton");
+
+weddingMusic.volume = 0.5;
+
+function startMusic() {
+  weddingMusic.play()
+    .then(() => {
+      musicButton.classList.add("playing");
+      musicButton.innerHTML = "♫";
+    })
+    .catch(() => {
+      console.log("Waiting for guest interaction.");
+    });
+}
+
+// Try autoplay when website opens
+window.addEventListener("load", startMusic);
+
+// Start music after the guest's first interaction
+function startMusicOnInteraction() {
+  if (weddingMusic.paused) {
+    startMusic();
+  }
+
+  document.removeEventListener("click", startMusicOnInteraction);
+  document.removeEventListener("touchstart", startMusicOnInteraction);
+}
+
+document.addEventListener("click", startMusicOnInteraction);
+document.addEventListener("touchstart", startMusicOnInteraction, { once: true });
+
+// Music button: Play / Pause
+function toggleMusic() {
+  if (weddingMusic.paused) {
+    startMusic();
+  } else {
+    weddingMusic.pause();
+    musicButton.classList.remove("playing");
+  }
+}
+
 
   </script>
 
