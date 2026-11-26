@@ -337,8 +337,8 @@
     }
 
     .timebox {
-      background: white;
-      border: 1px solid var(--line);
+      background: transparent;
+      border: none;
       padding: 20px 8px;
       border-radius: 4px;
     }
@@ -348,7 +348,8 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 2.8rem;
       font-weight: 500;
-      color: var(--blue-deep);
+      color: #f5e4c9;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .timebox span {
@@ -368,8 +369,8 @@
     }
 
     .detail-card {
-      background: white;
-      border: 1px solid var(--line);
+      background: transparent;
+      border: none;
       padding: 34px 25px;
       text-align: center;
       box-shadow: 0 12px 35px #76556712;
@@ -377,7 +378,7 @@
 
     .detail-icon {
       font-size: 1.8rem;
-      color: var(--rose);
+      color: #f5dfbd;
     }
 
     .detail-card h3 {
@@ -385,20 +386,20 @@
       font-size: 1.8rem;
       font-weight: 500;
       margin: 12px 0;
-      color: var(--rose);
+      color: #f5dfbd;
     }
 
     .detail-card p {
       font-size: .82rem;
       line-height: 1.8;
-      color: var(--muted);
+      color: #f5dfbd;
       margin: 5px 0;
     }
 
     .map-link {
       display: inline-block;
       margin-top: 18px;
-      color: var(--blue-deep);
+      color: #f5dfbd;
       font-size: .68rem;
       text-transform: uppercase;
       letter-spacing: .13em;
@@ -443,16 +444,16 @@
 }
 
     .attire-card {
-      background: white;
+      background: transparent;
       padding: 28px;
-      border: 1px solid #e6e0eb;
+      border: none;
       text-align: center;
     }
 
     .attire-card h3 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.6rem;
-      color: #70738F;
+      color: #f5dfbd;
       font-weight: 600;
       margin: 0 0 15px;
     }
@@ -466,7 +467,7 @@
     .attire-card p {
       font-size: .78rem;
       line-height: 1.8;
-      color: var(--muted);
+      color: #f5dfbd;
     }
 
     /* GIFT GUIDE */
@@ -479,11 +480,11 @@
       max-width: 690px;
       margin: 25px auto 0;
       padding: 30px;
-      border: 1px solid var(--line);
+      border: none;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
+      font-size: 1.65rem;
       line-height: 1.8;
-      color: #ffffff;
+      color: #f5dfbd;
     }
 
     /* REMINDERS */
@@ -577,7 +578,7 @@
 
 /* Individual reminder cards */
 #reminders .reminder-card {
-  background: #ffffff;
+  background: transparent;
   border-radius: 28px;
   padding: 40px 30px;
   text-align: center;
@@ -596,7 +597,7 @@
   width: 110px;
   height: 110px;
   margin: 0 auto 20px;
-  color: #542044;
+  color: #f5dfbd;
 }
 
 #reminders .reminder-icon svg {
@@ -608,7 +609,7 @@
 #reminders .reminder-card h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #3d1737;
+  color: #f5dfbd;
   margin: 15px 0;
   letter-spacing: 0.5px;
 }
@@ -617,7 +618,7 @@
 #reminders .reminder-card p {
   font-size: 19px;
   line-height: 1.6;
-  color: #555;
+  color:#f5dfbd;
   max-width: 550px;
   margin: 0 auto;
 }
@@ -758,10 +759,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
@@ -852,7 +853,8 @@
 }
 
 #invitation .timebox {
-  background: #f3e6ce;
+  background: transparent;
+      border: none;
   color: #45352b;
 
   width: 90px;
@@ -869,12 +871,12 @@
 
 #invitation .timebox strong {
   font-size: 42px;
-  color: #3d3028;
+  color: #f5dfbd;
 }
 
 #invitation .timebox span {
   font-size: 12px;
-  color: #9b7562;
+  color: #f5dfbd;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -936,10 +938,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
@@ -1010,7 +1012,7 @@
   min-height: 690px;
   padding: 70px 35px 55px;
 
-  padding: 45px 30px 8%;
+  padding: 45px 30px;
 
   margin: 0;
   transform: translateX(0);
@@ -1089,10 +1091,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
@@ -1155,15 +1157,15 @@
 }
 
 #attire .lead {
-  color: #f4e9d8;
-  font-size: 15px;
+  color: #f5dfbd;
+  font-size: 17px;
   line-height: 1.8;
   max-width: 330px;
 }
 
 #attire .lead1 {
-  color: #2e2930;
-  font-size: 15px;
+  color: #f5dfbd;
+  font-size: 17px;
   line-height: 1.8;
   max-width: 330px;
 }
@@ -1184,10 +1186,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
@@ -1279,10 +1281,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
@@ -1375,10 +1377,10 @@
   min-height: 520px;
 
   display: flex;
-  /* align-items: center; */
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  padding: 30px 0 30px 8%;
+  padding: 30px 0 30px;
   box-sizing: border-box;
 }
 
