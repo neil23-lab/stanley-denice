@@ -1120,6 +1120,51 @@
 
 }
 
+/* =================================
+   MOBILE DECORATIVE ICONS
+================================= */
+
+@media (max-width: 768px) {
+
+  #invitation .hero-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* TOP RIGHT ICON */
+  #invitation .hero-card::before {
+    top: 15px;
+    right: 12px;
+
+    left: auto;
+    bottom: auto;
+
+    transform: scale(0.55);
+    transform-origin: top right;
+
+    opacity: 0.35;
+
+    pointer-events: none;
+  }
+
+  /* BOTTOM LEFT ICON */
+  #invitation .hero-card::after {
+    bottom: 15px;
+    left: 12px;
+
+    right: auto;
+    top: auto;
+
+    transform: scale(0.55);
+    transform-origin: bottom left;
+
+    opacity: 0.35;
+
+    pointer-events: none;
+  }
+
+}
+
 
 
 
